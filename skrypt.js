@@ -1,7 +1,15 @@
 function obliczanie(){
-    let a=document.getElementById("liczba1").value;
-    let an=document.getElementById("liczba2").value;
-    let n=document.getElementById("liczba3").value;
-    wynik=(an-a)/(n-1);
-    document.getElementById("wynik").value="Różnica ciągu arytmetycznego wynosi : "+wynik;
+    let liczba1=document.getElementById("LICZBA1").value;
+    LICZBAbinarna="";
+    wynik="";
+    while(liczba1>0){
+        reszta=liczba1%2
+        wynik=wynik+reszta
+        liczba1=Math.floor(liczba1/2)
+        
+    }
+    document.getElementById("wynik").value=wynik;
+
+
+
 }
